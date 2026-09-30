@@ -1,0 +1,736 @@
+<<<<<<< HEAD
+/* =VARIÁVEIS= */
+
+:root {
+    --fundo: #151528;
+    --painel: #20203a;
+    --borda: #33334d;
+
+    --roxo: #5b2ee6;
+    --roxo-escuro: #351b91;
+    --roxo-foco: #7c4dff;
+
+    --amarelo: #ffd43b;
+
+    --branco: #fff;
+    --texto: #e5e0ff;
+    --cinza: #aaa;
+
+    --raio: 10px;
+}
+
+
+/* =RESET= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =BODY= */
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--fundo);
+    color: var(--branco);
+}
+
+
+/* =PÁGINA INICIAL= */
+
+.inicio {
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* =APRESENTAÇÃO= */
+
+.apresentacao {
+    width: 55%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--roxo),
+            var(--roxo-escuro)
+        );
+}
+
+
+/* =LOGO= */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 25px;
+
+    font-size: 55px;
+    line-height: 0.9;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.logo strong {
+    color: var(--amarelo);
+}
+
+
+/* =DESCRIÇÃO= */
+
+.apresentacao p {
+    max-width: 500px;
+
+    color: var(--texto);
+
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* =CARTAS= */
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap: 15px;
+
+    margin-top: 50px;
+}
+
+.carta {
+    width: 90px;
+    height: 160px;
+
+    overflow: hidden;
+
+    background: var(--branco);
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =IMAGENS= */
+=======
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    min-height: 100vh; 
+ 
+    font-family: Arial, Helvetica, sans-serif; 
+ 
+    background: #151528; 
+ 
+    color: white; 
+} 
+ 
+ 
+/* ========================= 
+   PÁGINA INICIAL 
+========================= */ 
+ 
+.inicio { 
+    min-height: 100vh; 
+ 
+    display: flex; 
+} 
+ 
+ 
+/* ========================= 
+   APRESENTAÇÃO 
+========================= */ 
+ 
+.apresentacao { 
+    width: 55%; 
+ 
+    min-height: 100vh; 
+ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+ 
+    padding: 80px; 
+ 
+    background: linear-gradient( 
+        145deg, 
+        #5b2ee6, 
+        #351b91 
+    ); 
+} 
+ 
+ 
+.logo { 
+    display: flex; 
+    flex-direction: column; 
+ 
+    font-size: 55px; 
+ 
+    line-height: 0.9; 
+ 
+    margin-bottom: 25px; 
+} 
+ 
+.logo span { 
+    font-weight: 300; 
+} 
+ 
+.logo strong { 
+    color: #ffd43b; 
+} 
+ 
+ 
+.apresentacao p { 
+    max-width: 500px; 
+ 
+    font-size: 20px; 
+ 
+    color: #e5e0ff; 
+ 
+    line-height: 1.5; 
+} 
+ 
+ 
+/* ========================= 
+   CARTAS 
+========================= */ 
+ 
+.cartas { 
+    display: grid; 
+ 
+    grid-template-columns: repeat(4, 90px); 
+ 
+    gap: 15px; 
+ 
+    margin-top: 50px; 
+} 
+ 
+.carta { 
+    width: : 100%; 
+    height: 160px; 
+ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    background: #ffffff; 
+ 
+    border-radius: 1px; 
+ 
+    overflow: hidden;
+ 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+ 
+    transition: 0.3s; 
+}
+
+
+/* =========================
+   IMAGENS DAS CARTAS
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta img {
+    width: 100%;
+    height: 100%;
+
+<<<<<<< HEAD
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =ROTAÇÃO DAS CARTAS= */
+
+.carta:nth-child(2) {
+    transform: rotate(9deg);
+}
+
+.carta:nth-child(3) {
+    transform: rotate(-9deg);
+}
+
+.carta:nth-child(5) {
+    transform: rotate(-8deg);
+}
+
+
+/* =HOVER DAS CARTAS= */
+
+.carta:hover {
+    transform:
+        translateY(-10px)
+        rotate(0deg);
+}
+
+
+/* =ÁREA DO JOGADOR= */
+
+.jogador {
+    width: 45%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    background: var(--fundo);
+}
+
+
+/* =CAIXA DO JOGADOR= */
+
+.caixa-jogador {
+    width: min(400px, 100%);
+
+    text-align: center;
+}
+
+.caixa-jogador h1 {
+    margin-bottom: 15px;
+
+    font-size: 38px;
+}
+
+.caixa-jogador p {
+    margin-bottom: 30px;
+
+    color: var(--cinza);
+
+    font-size: 17px;
+}
+
+
+/* =INPUT= */
+
+#nome {
+    width: 100%;
+    height: 55px;
+
+    margin-bottom: 15px;
+    padding: 0 20px;
+
+    border: 2px solid var(--borda);
+    border-radius: var(--raio);
+
+    outline: none;
+
+    background: var(--painel);
+    color: var(--branco);
+
+    font-size: 16px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#nome::placeholder {
+    color: #777;
+}
+
+#nome:focus {
+    border-color: var(--roxo-foco);
+
+    box-shadow:
+        0 0 0 3px rgba(124, 77, 255, 0.15);
+}
+
+
+/* =BOTÃO= */
+
+button {
+    width: 100%;
+    height: 55px;
+
+    border: none;
+    border-radius: var(--raio);
+
+    background: var(--amarelo);
+    color: #171528;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 212, 59, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =TABLETS= */
+
+@media (max-width: 1000px) {
+
+    .apresentacao {
+        padding: 60px 40px;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    .cartas {
+        grid-template-columns: repeat(4, 70px);
+        gap: 12px;
+    }
+
+    .carta {
+        width: 70px;
+        height: 125px;
+    }
+
+    .jogador {
+        padding: 30px;
+    }
+}
+
+
+/* =CELULAR= */
+
+@media (max-width: 800px) {
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .apresentacao,
+    .jogador {
+        width: 100%;
+    }
+
+    .apresentacao {
+        min-height: auto;
+
+        padding: 60px 30px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 42px;
+    }
+
+    .apresentacao p {
+        font-size: 17px;
+    }
+
+    .cartas {
+        margin-top: 35px;
+
+        grid-template-columns: repeat(4, 65px);
+        gap: 10px;
+    }
+
+    .carta {
+        width: 65px;
+        height: 90px;
+    }
+
+    .jogador {
+        min-height: auto;
+
+        padding: 60px 30px;
+    }
+
+    .caixa-jogador {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* =CELULARES PEQUENOS= */
+
+@media (max-width: 400px) {
+
+    .apresentacao {
+        padding: 45px 20px;
+    }
+
+    .logo {
+        font-size: 34px;
+    }
+
+    .apresentacao p {
+        font-size: 15px;
+    }
+
+    .cartas {
+        grid-template-columns: repeat(4, 55px);
+        gap: 8px;
+
+        margin-top: 30px;
+    }
+
+    .carta {
+        width: 55px;
+        height: 80px;
+    }
+
+    .jogador {
+        padding: 45px 20px;
+    }
+
+    .caixa-jogador h1 {
+        font-size: 30px;
+    }
+
+    .caixa-jogador p {
+        font-size: 15px;
+    }
+}
+
+
+/* = REDUZIR ANIMAÇÕES = */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+=======
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   EFEITOS DAS CARTAS
+========================= */
+
+.carta:nth-child(2) { 
+    transform: rotate(9deg); 
+} 
+ 
+.carta:nth-child(3) { 
+    transform: rotate(-9deg); 
+} 
+ 
+.carta:nth-child(5) { 
+    transform: rotate(-8deg); 
+} 
+ 
+.carta:hover { 
+    transform: translateY(-10px) rotate(0deg); 
+} 
+ 
+ 
+/* ========================= 
+   ÁREA DO JOGADOR 
+========================= */ 
+ 
+.jogador { 
+    width: 45%; 
+ 
+    min-height: 100vh; 
+ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    background: #151528; 
+} 
+ 
+ 
+.caixa-jogador { 
+    width: 80%; 
+ 
+    max-width: 400px; 
+ 
+    text-align: center; 
+} 
+ 
+ 
+.caixa-jogador h1 { 
+    font-size: 38px; 
+ 
+    margin-bottom: 15px; 
+} 
+ 
+ 
+.caixa-jogador p { 
+    color: #aaa; 
+ 
+    font-size: 17px; 
+ 
+    margin-bottom: 30px; 
+} 
+ 
+ 
+/* ========================= 
+   INPUT 
+========================= */ 
+ 
+#nome { 
+    width: 100%; 
+ 
+    height: 55px; 
+ 
+    padding: 0 20px; 
+ 
+    border: 2px solid #33334d; 
+ 
+    border-radius: 10px; 
+ 
+    background: #20203a; 
+ 
+    color: white; 
+ 
+    font-size: 16px; 
+ 
+    outline: none; 
+ 
+    margin-bottom: 15px; 
+ 
+    transition: 0.3s; 
+} 
+ 
+#nome::placeholder { 
+    color: #777; 
+} 
+ 
+#nome:focus { 
+    border-color: #7c4dff; 
+ 
+    box-shadow: 0 0 0 3px rgba(124, 77, 255, 0.15); 
+} 
+ 
+ 
+/* ========================= 
+   BOTÃO 
+========================= */ 
+ 
+button { 
+    width: 100%; 
+ 
+    height: 55px; 
+ 
+    border: none; 
+ 
+    border-radius: 10px; 
+ 
+    background: #ffd43b; 
+ 
+    color: #171528; 
+ 
+    font-size: 16px; 
+ 
+    font-weight: bold; 
+ 
+    cursor: pointer; 
+ 
+    transition: 0.3s; 
+} 
+ 
+button:hover { 
+    transform: translateY(-3px); 
+ 
+    box-shadow: 0 8px 20px rgba(255, 212, 59, 0.25); 
+} 
+ 
+button:active { 
+    transform: translateY(0); 
+} 
+ 
+ 
+/* ========================= 
+   RESPONSIVO 
+========================= */ 
+ 
+@media (max-width: 800px) { 
+ 
+    .inicio { 
+        flex-direction: column; 
+    } 
+ 
+    .apresentacao { 
+        width: 100%; 
+ 
+        min-height: 50vh; 
+ 
+        padding: 50px 30px; 
+ 
+        align-items: center; 
+ 
+        text-align: center; 
+    } 
+ 
+    .logo { 
+        font-size: 42px; 
+    } 
+ 
+    .cartas { 
+        margin-top: 30px; 
+    } 
+ 
+    .carta { 
+        width: : 100%; 
+        height: 80px; 
+    } 
+ 
+    .jogador { 
+        width: 100%; 
+ 
+        min-height: 50vh; 
+ 
+        padding: 50px 30px; 
+    } 
+ 
+    .caixa-jogador { 
+        width: 100%; 
+    } 
+}
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7

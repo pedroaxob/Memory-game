@@ -1,0 +1,983 @@
+/* =========================
+<<<<<<< HEAD
+   VARIÁVEIS
+========================= */
+
+:root {
+    --fundo: #151528;
+    --painel: #20203a;
+    --borda: #343450;
+
+    --roxo: #6c3cff;
+    --roxo-escuro: #4320a8;
+    --roxo-borda: #8764ff;
+
+    --amarelo: #ffd43b;
+
+    --branco: #fff;
+    --cinza: #8f8fa8;
+    --cinza-claro: #aaa;
+
+    --raio: 12px;
+}
+
+
+/* = RESET = */
+=======
+   RESET
+========================= */
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+<<<<<<< HEAD
+/* =   BODY= */
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: var(--fundo);
+    color: var(--branco);
+}
+
+
+/*  CABEÇALHO */
+
+.topo {
+    min-height: 80px;
+=======
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #151528;
+
+    color: white;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.topo {
+    width: 100%;
+    min-height: 80px;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    padding: 15px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+<<<<<<< HEAD
+    background: var(--painel);
+    border-bottom: 1px solid var(--borda);
+}
+
+
+/* LOGO */
+.logo {
+    color: var(--branco);
+
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--amarelo);
+}
+
+
+/*  STATUS= */
+
+.status {
+    display: flex;
+    align-items: center;
+=======
+    background: #20203a;
+
+    border-bottom: 1px solid #343450;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: white;
+}
+
+.logo span {
+    color: #ffd43b;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    display: flex;
+
+    align-items: center;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    gap: 35px;
+}
+
+.status-item {
+    display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+    align-items: center;
+=======
+
+    flex-direction: column;
+
+    align-items: center;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    gap: 4px;
+}
+
+.status-item span {
+<<<<<<< HEAD
+    color: var(--cinza);
+
+    font-size: 12px;
+=======
+    font-size: 12px;
+
+    color: #8f8fa8;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    text-transform: uppercase;
+}
+
+.status-item strong {
+<<<<<<< HEAD
+    color: var(--branco);
+    font-size: 16px;
+}
+
+
+/* = CONTEÚDO */
+=======
+    font-size: 16px;
+
+    color: white;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.conteudo {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+=======
+
+    flex-direction: column;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+<<<<<<< HEAD
+/* TÍTULO  */
+
+.titulo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titulo h1 {
+    margin-bottom: 8px;
+
+    color: var(--branco);
+    font-size: 32px;
+}
+
+.titulo p {
+    color: var(--cinza);
+=======
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+.titulo p {
+    color: #8989a2;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    font-size: 15px;
+}
+
+
+<<<<<<< HEAD
+/* =TABULEIRO*/
+
+.tabuleiro {
+    width: min(650px, 95vw);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+=======
+/* =========================
+   TABULEIRO
+========================= */
+
+.tabuleiro {
+    width: 650px;
+
+    max-width: 95vw;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    gap: 15px;
+}
+
+
+<<<<<<< HEAD
+/* CARTA */
+
+.carta {
+    width: 100%;
+    aspect-ratio: 1;
+
+    position: relative;
+
+    cursor: pointer;
+    perspective: 1000px;
+
+    transition: transform 0.25s ease;
+}
+
+
+/* 
+   CONTEÚDO DA CARTA*/
+
+.carta-conteudo {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+=======
+/* =========================
+   CARTA
+========================= */
+
+.carta {
+    width: : 100%;
+
+    aspect-ratio: 1 / 1;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    perspective: 1000px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   INTERIOR DA CARTA
+========================= */
+
+.carta-conteudo {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    transition: transform 0.5s ease;
+}
+
+
+<<<<<<< HEAD
+/* =FRENTE E VERSO= */
+=======
+/* =========================
+   FRENTE / VERSO
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta-frente,
+.carta-verso {
+    position: absolute;
+<<<<<<< HEAD
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    backface-visibility: hidden;
+}
+
+
+/* =VERSO= */
+
+.carta-verso {
+    background:
+        linear-gradient(
+            145deg,
+            var(--roxo),
+            var(--roxo-escuro)
+        );
+
+    border: 2px solid var(--roxo-borda);
+
+    color: var(--branco);
+
+    font-size: 40px;
+    font-weight: 700;
+=======
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    backface-visibility: hidden;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   VERSO
+========================= */
+
+.carta-verso {
+    background: linear-gradient(
+        145deg,
+        #6c3cff,
+        #4320a8
+    );
+
+    border: 2px solid #8764ff;
+
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: bold;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+<<<<<<< HEAD
+/* =FRENTE= */
+
+.carta-frente {
+    background: var(--branco);
+
+    border: 2px solid var(--branco);
+
+    transform: rotateY(180deg);
+=======
+/* =========================
+   FRENTE
+========================= */
+
+.carta-frente {
+    background: white;
+
+    transform: rotateY(180deg);
+
+    border: 2px solid #ffffff;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+}
+
+.carta-frente img {
+    width: 100%;
+    height: 100%;
+
+<<<<<<< HEAD
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =CARTA VIRADA= */
+=======
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   CARTA VIRADA
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta.virada .carta-conteudo {
+    transform: rotateY(180deg);
+}
+
+
+<<<<<<< HEAD
+/* =CARTA ENCONTRADA= */
+=======
+/* =========================
+   CARTA ENCONTRADA
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta.encontrada {
+    cursor: default;
+}
+
+.carta.encontrada .carta-frente {
+<<<<<<< HEAD
+    border: 3px solid var(--amarelo);
+=======
+    border: 3px solid #ffd43b;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+    box-shadow:
+        0 0 20px rgba(255, 212, 59, 0.35);
+}
+
+
+<<<<<<< HEAD
+/* =HOVER= */
+=======
+/* =========================
+   HOVER
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta:not(.virada):not(.encontrada):hover {
+    transform: translateY(-5px);
+}
+
+
+<<<<<<< HEAD
+/* =CLIQUE= */
+=======
+/* =========================
+   CLIQUE
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+.carta:active {
+    transform: scale(0.96);
+}
+
+
+<<<<<<< HEAD
+/* =BOTÕES= */
+
+.botao-reiniciar,
+#jogar-novamente {
+=======
+/* =========================
+   BOTÃO REINICIAR
+========================= */
+
+.botao-reiniciar {
+    margin-top: 30px;
+
+    padding: 13px 25px;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    border: none;
+
+    border-radius: 8px;
+
+<<<<<<< HEAD
+    background: var(--amarelo);
+    color: #18182b;
+
+    font-weight: 700;
+=======
+    background: #ffd43b;
+
+    color: #18182b;
+
+    font-size: 14px;
+
+    font-weight: bold;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+    cursor: pointer;
+
+    transition:
+<<<<<<< HEAD
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.botao-reiniciar {
+    margin-top: 30px;
+    padding: 13px 25px;
+
+    font-size: 14px;
+}
+
+#jogar-novamente {
+    width: 100%;
+    padding: 13px;
+}
+
+.botao-reiniciar:hover,
+#jogar-novamente:hover {
+=======
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.botao-reiniciar:hover {
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 212, 59, 0.25);
+}
+
+<<<<<<< HEAD
+.botao-reiniciar:active,
+#jogar-novamente:active {
+=======
+.botao-reiniciar:active {
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    transform: translateY(0);
+}
+
+
+<<<<<<< HEAD
+/* =TELA DE VITÓRIA= */
+
+.mensagem {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: none;
+    align-items: center;
+=======
+/* =========================
+   MENSAGEM DE VITÓRIA
+========================= */
+
+.mensagem {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(10, 10, 25, 0.82);
+<<<<<<< HEAD
+=======
+
+    z-index: 1000;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+}
+
+.mensagem.ativa {
+    display: flex;
+}
+
+
+<<<<<<< HEAD
+/* =CAIXA DE VITÓRIA= */
+
+.mensagem-caixa {
+    width: min(400px, 100%);
+=======
+/* =========================
+   CAIXA DA MENSAGEM
+========================= */
+
+.mensagem-caixa {
+    width: 400px;
+
+    max-width: 100%;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+    padding: 40px;
+
+    text-align: center;
+
+<<<<<<< HEAD
+    background: var(--painel);
+
+    border: 1px solid var(--borda);
+=======
+    background: #20203a;
+
+    border: 1px solid #343450;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    border-radius: 15px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5);
+
+    animation: aparecer 0.3s ease;
+}
+
+
+<<<<<<< HEAD
+/* =VITÓRIA= */
+
+.mensagem-caixa h2 {
+    margin-bottom: 10px;
+
+    color: var(--amarelo);
+    font-size: 32px;
+}
+
+.mensagem-caixa > p {
+    margin-bottom: 25px;
+
+    color: var(--cinza-claro);
+}
+
+
+/* =RESULTADO= */
+
+.resultado {
+    margin-bottom: 25px;
+}
+
+.resultado p {
+    color: var(--cinza-claro);
+}
+
+.resultado strong {
+    color: var(--branco);
+}
+
+
+/* =ANIMAÇÃO= */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+=======
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+        transform: scale(1);
+    }
+}
+
+
+<<<<<<< HEAD
+/* =RESPONSIVIDADE= */
+=======
+/* =========================
+   TÍTULO DA VITÓRIA
+========================= */
+
+.mensagem-caixa h2 {
+    margin-bottom: 10px;
+
+    font-size: 32px;
+
+    color: #ffd43b;
+}
+
+.mensagem-caixa > p {
+    color: #aaa;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   RESULTADO
+========================= */
+
+.resultado {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.resultado p {
+    color: #aaa;
+}
+
+.resultado strong {
+    color: white;
+}
+
+
+/* =========================
+   BOTÃO JOGAR NOVAMENTE
+========================= */
+
+#jogar-novamente {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffd43b;
+
+    color: #18182b;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#jogar-novamente:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 20px rgba(255, 212, 59, 0.25);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+@media (max-width: 700px) {
+
+    .topo {
+        padding: 20px;
+
+        flex-direction: column;
+<<<<<<< HEAD
+=======
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+        gap: 20px;
+    }
+
+    .status {
+<<<<<<< HEAD
+        justify-content: center;
+        gap: 25px;
+=======
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 20px;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    }
+
+    .tabuleiro {
+        width: 100%;
+<<<<<<< HEAD
+=======
+
+        grid-template-columns: repeat(4, 1fr);
+
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+        gap: 10px;
+    }
+
+    .carta-verso {
+        font-size: 30px;
+    }
+}
+
+
+<<<<<<< HEAD
+/* =CELULARES PEQUENOS= */
+=======
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+
+@media (max-width: 400px) {
+
+    .topo {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .status {
+<<<<<<< HEAD
+        gap: 20px;
+=======
+        gap: 10px;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    }
+
+    .status-item span {
+        font-size: 9px;
+    }
+
+    .status-item strong {
+        font-size: 12px;
+    }
+
+    .conteudo {
+        padding: 30px 15px;
+    }
+
+<<<<<<< HEAD
+    .titulo {
+        margin-bottom: 25px;
+    }
+
+=======
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    .titulo h1 {
+        font-size: 25px;
+    }
+
+    .titulo p {
+        font-size: 13px;
+    }
+
+    .tabuleiro {
+        gap: 8px;
+    }
+
+<<<<<<< HEAD
+    .carta-frente,
+    .carta-verso {
+        border-radius: 10px;
+=======
+    .carta {
+        border-radius: 10px;
+    }
+
+    .carta-frente,
+    .carta-verso {
+        border-radius: 9px;
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
+    }
+
+    .carta-verso {
+        font-size: 25px;
+    }
+
+    .mensagem-caixa {
+        padding: 30px 20px;
+    }
+
+    .mensagem-caixa h2 {
+        font-size: 27px;
+    }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7

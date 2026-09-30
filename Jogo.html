@@ -1,0 +1,309 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="jogo.css">
+</head>
+
+<body>
+
+    <!-- 
+         CABEÇALHO
+    -->
+
+    <header class="topo">
+
+        <div class="logo">
+            MEMORY<span>GAME</span>
+        </div>
+
+        <div class="status">
+            
+            <div class="status-item">
+                <span>Jogador</span>
+                <strong id="jogador">Isaac</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Pontos</span>
+                <strong id="pontos">000</strong>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- 
+         CONTEÚDO
+     -->
+
+    <main class="conteudo">
+
+        <section class="titulo">
+
+            <h1>Encontre os pares!</h1>
+
+            <p>
+                Vire as cartas e encontre todas as combinações.
+            </p>
+
+        </section>
+
+
+        <!-- 
+             TABULEIRO
+         -->
+
+        <section
+            class="tabuleiro"
+            id="tabuleiro"
+            aria-label="Tabuleiro do jogo"
+        >
+            <!--
+                As cartas serão
+                criadas pelo JavaScript.
+            -->
+        </section>
+
+
+        <!-- 
+             BOTÃO REINICIAR
+         -->
+
+        <button
+            class="botao-reiniciar"
+            id="reiniciar"
+            type="button"
+        >
+            Reiniciar jogo
+        </button>
+
+    </main>
+
+
+    <!-- 
+         TELA DE VITÓRIA
+     -->
+
+    <div
+        class="mensagem"
+        id="mensagem"
+        aria-hidden="true"
+    >
+
+        <div
+            class="mensagem-caixa"
+            role="dialog"
+            aria-modal="true"
+        >
+
+            <h2>🎉 Parabéns!</h2>
+
+            <p>
+                Você encontrou todos os pares!
+            </p>
+
+
+            <div class="resultado">
+
+                <p>
+                    Pontos:
+                    <strong id="resultado-pontos">000</strong>
+                </p>
+
+            </div>
+
+
+            <button
+                id="jogar-novamente"
+                type="button"
+            >
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- 
+         JAVASCRIPT
+     -->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="jogo.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="topo">
+
+        <div class="logo">
+            MEMORY<span>GAME</span>
+        </div>
+
+        <div class="status">
+
+            <div class="status-item">
+                <span>Jogador</span>
+                <strong id="jogador">Isaac</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Pontos</span>
+                <strong id="pontos">000</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Tentativas</span>
+                <strong id="tentativas">00</strong>
+            </div>
+
+            <div class="status-item">
+                <span>Tempo</span>
+                <strong id="tempo">00:00</strong>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main class="conteudo">
+
+        <section class="titulo">
+
+            <h1>Encontre os pares!</h1>
+
+            <p>
+                Vire as cartas e encontre todas as combinações.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             TABULEIRO
+        ========================== -->
+
+        <section
+            class="tabuleiro"
+            id="tabuleiro"
+            aria-label="Tabuleiro do jogo"
+        >
+            <!--
+                As 16 cartas serão
+                criadas pelo JavaScript.
+            -->
+        </section>
+
+
+        <!-- =========================
+             BOTÃO REINICIAR
+        ========================== -->
+
+        <button
+            class="botao-reiniciar"
+            id="reiniciar"
+            type="button"
+        >
+            Reiniciar jogo
+        </button>
+
+    </main>
+
+
+    <!-- =========================
+         TELA DE VITÓRIA
+    ========================== -->
+
+    <div
+        class="mensagem"
+        id="mensagem"
+        aria-hidden="true"
+    >
+
+        <div
+            class="mensagem-caixa"
+            role="dialog"
+            aria-modal="true"
+        >
+
+            <h2>🎉 Parabéns!</h2>
+
+            <p>
+                Você encontrou todos os pares!
+            </p>
+
+
+            <div class="resultado">
+
+                <p>
+                    Pontos:
+                    <strong id="resultado-pontos">000</strong>
+                </p>
+
+                <p>
+                    Tentativas:
+                    <strong id="resultado-tentativas">00</strong>
+                </p>
+
+                <p>
+                    Tempo:
+                    <strong id="resultado-tempo">00:00</strong>
+                </p>
+
+            </div>
+
+
+            <button
+                id="jogar-novamente"
+                type="button"
+            >
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+>>>>>>> b5a179807f7ce57106b1a09c142f233b9fbb69b7
